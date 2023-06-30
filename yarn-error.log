@@ -1,0 +1,72 @@
+Arguments: 
+  /Users/josh/.nvm/versions/node/v16.11.1/bin/node /Users/josh/.yarn/bin/yarn.js add pica
+
+PATH: 
+  /Users/josh/Library/pnpm:/opt/homebrew/opt/mongodb-community@4.4/bin:/Users/josh/.yarn/bin:/Users/josh/.config/yarn/global/node_modules/.bin:/Users/josh/.nvm/versions/node/v16.11.1/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  16.11.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/josh/Library/Caches/Yarn/v6/npm-globals-13.12.1-ec206be932e6c77236677127577aa8e50bf1c5cb-integrity/node_modules/globals/globals.json' -> '/Users/josh/work/file-upload-system/node_modules/@eslint/eslintrc/node_modules/globals/globals.json'
+
+npm manifest: 
+  {
+    "name": "file-upload-system",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@emotion/react": "^11.7.1",
+      "@testing-library/jest-dom": "^5.14.1",
+      "@testing-library/react": "^12.0.0",
+      "@testing-library/user-event": "^13.2.1",
+      "@types/jest": "^27.0.1",
+      "@types/node": "^16.7.13",
+      "@types/react": "^17.0.20",
+      "@types/react-dom": "^17.0.9",
+      "aws-sdk": "^2.1071.0",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2",
+      "react-router-dom": "6",
+      "react-scripts": "5.0.0",
+      "typescript": "^4.4.2",
+      "util": "^0.12.4",
+      "web-vitals": "^2.1.0"
+    },
+    "scripts": {
+      "dev": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
