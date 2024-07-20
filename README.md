@@ -3,7 +3,7 @@
 - You need to create an AWS IAM with S3 permission
 - Ref. [https://supsystic.com/documentation/id-secret-access-key-amazon-s3/](https://supsystic.com/documentation/id-secret-access-key-amazon-s3/)
 
-## Project Goals
+## Features
 
 - Utilize [Pica.js](https://github.com/nodeca/pica) for image compression and optimization
 - Integrate AWS Services (S3) using AWS-SDK
