@@ -26,6 +26,9 @@
     "util": "^0.12.4",
     "web-vitals": "^2.1.0"
   },
+  "devDependencies": {
+    "@types/pica": "^9.0.0"
+  },
   "scripts": {
     "dev": "react-scripts start",
     "build": "react-scripts build",
@@ -57,7 +60,8 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@types/pica": "^9.0.0"
+  "resolutions": {
+    "ws": "7.5.10",
+    "axios": ">=0.28.0"
   }
 }
