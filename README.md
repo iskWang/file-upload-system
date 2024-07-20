@@ -1,46 +1,78 @@
-# Getting Started with Create React App
+## ⚠️ Requirement ⚠️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- You need to create an AWS IAM with S3 permission
+- Ref. [https://supsystic.com/documentation/id-secret-access-key-amazon-s3/](https://supsystic.com/documentation/id-secret-access-key-amazon-s3/)
 
-## Available Scripts
+## Project Goals
 
-In the project directory, you can run:
+- Utilize [Pica.js](https://github.com/nodeca/pica) for image compression and optimization
+- Integrate AWS Services (S3) using AWS-SDK
+- Implement UI design using [Blueprint.js](https://blueprintjs.com/)
 
-### `yarn start`
+## Demo Site
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [https://me.josh.com.tw/file-upload-system/](https://me.josh.com.tw/file-upload-system/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## How to Start the Application
 
-### `yarn test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```sh
+   $ git clone git@github.com:iskWang/file-upload-system.git
+   ```
 
-### `yarn build`
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```sh
+   $ cd file-upload-system
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install the dependencies (using pnpm or your preferred package manager):
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```sh
+   $ pnpm install
+   ```
 
-### `yarn eject`
+4. Start the development server:
+   ```sh
+   $ pnpm dev
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Project Structure
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+/src
+  /Asset
+  /Component
+  /Container
+  /Lib
+  /Presentation
+  /Scene
+  /test
+  App.tsx
+  main.tsx
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Main Component
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Component
 
-## Learn More
+Mainly for UI component
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Container
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Connect reducer store and manage state logic.
+
+- `/Container/App`: Manage IAM token and login flow
+
+- `/Container/Dashboard`: Manage /dashboard page context store and actions.
+
+### Presentation
+
+The main UI page for combine components and reducer actions
+
+- `/Presentation/Dashboard`: The /dashboard page of the components and container actions.
+
+### Scene
+
+Combines Container, Presentation, and is intended for future use with routing requirements(eg. redirect logout)
